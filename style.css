@@ -1,0 +1,59 @@
+html, body {
+    height: 100vh;
+    font-family: "Arial", "Helvetica", sans-serif;
+}
+body {
+    padding: 0;
+    margin: 0;
+    
+}
+
+h1 {
+    padding: 0;
+    margin: 0;
+}
+
+input, button {
+    all: unset;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    position: absolute;
+    text-align: center;
+    top: 20px; 
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.field {
+    min-width: 300px;
+    min-height: 30px;
+    padding: 4px 8px;
+    border: 2px solid lightgray;
+    border-radius: 4px;
+}
+
+.go {
+    min-height: 30px;
+    padding: 4px 8px;
+    cursor: pointer;
+    border: 2px solid lightgray;
+    border-radius: 4px;
+    transition: .3s;
+}
+
+.go:hover {
+    background-color: lightgray;
+}
