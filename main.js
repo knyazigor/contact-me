@@ -4,13 +4,13 @@ const link = document.querySelector('.link')
 let number = ''
 
 goButton.addEventListener('click', () => {
-    if (number) window.open(`https://api.whatsapp.com/send/?phone=${number}`)    
+    if (number) window.open(`https://api.whatsapp.com/send/?phone=${number[0] == '8' ? '7' + number.slice(1) : number}`)    
 })
 
 field.addEventListener('input', () => {
     getNumber()
-    link.textContent = `https://api.whatsapp.com/send/?phone=${number}`
-    link.href = `https://api.whatsapp.com/send/?phone=${number}`
+    link.textContent = `https://api.whatsapp.com/send/?phone=${number[0] == '8' ? '7' + number.slice(1) : number}`
+    link.href = `https://api.whatsapp.com/send/?phone=${number[0] == '8' ? '7' + number.slice(1) : number}`
 })
 
 function getNumber() {
